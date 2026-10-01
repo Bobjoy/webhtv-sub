@@ -1,12 +1,12 @@
-# tv-resource
+# webhtv-sub
 
 webhtv「订阅」功能用的资源清单仓库。清单里每一条是一个第三方 TVBox 资源地址，app 拉取清单后由用户择一启用。
 
 ## 订阅地址
 
 ```text
-https://raw.githubusercontent.com/Bobjoy/tv-resource/main/vod.json
-https://raw.githubusercontent.com/Bobjoy/tv-resource/main/live.json
+https://raw.githubusercontent.com/Bobjoy/webhtv-sub/main/vod.json
+https://raw.githubusercontent.com/Bobjoy/webhtv-sub/main/live.json
 ```
 
 在 app 的「设置 → 订阅」里新增订阅时粘贴上面的地址，分组分别选「点播」和「直播」。
