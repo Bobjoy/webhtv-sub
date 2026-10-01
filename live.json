@@ -1,0 +1,15 @@
+{
+  "name": "TV 直播源订阅",
+  "list": [
+    {
+      "name": "zbds IPTV4",
+      "url": "https://live.zbds.top/tv/iptv4.txt",
+      "remark": "2026-10-01 实测 200 / 59KB"
+    },
+    {
+      "name": "xhztv DC",
+      "url": "http://xhztv.top/DC.txt",
+      "remark": "2026-10-01 实测 200 / 1.9KB"
+    }
+  ]
+}
