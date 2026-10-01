@@ -1,0 +1,36 @@
+name: check-resources
+
+on:
+  schedule:
+    # GitHub cron 用 UTC；20:00 UTC = 北京时间次日 04:00
+    - cron: '0 20 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: check-resources
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 巡检资源地址
+        run: node scripts/check-resources.mjs
+
+      - name: 提交变更
+        run: |
+          set -e
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "无变更，跳过提交"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add vod.json live.json removed.json
+          git commit -m "chore: 每日资源巡检 $(date -u +%F)"
+          git push

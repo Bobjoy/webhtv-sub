@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "name": "iyouhun DC",
+      "url": "https://www.iyouhun.com/tv/dc",
+      "remark": "2026-10-01 实测 200 / 18KB",
+      "source": "vod",
+      "removedAt": "2026-10-01",
+      "reason": "返回 HTML 页面"
+    }
+  ]
+}

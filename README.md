@@ -33,4 +33,15 @@ https://raw.githubusercontent.com/Bobjoy/tv-resource/main/live.json
 
 ## 维护
 
-`vod.json` / `live.json` 里的条目地址来自公开社区清单，随时可能失效。`remark` 记录的是录入时的实测状态（HTTP 状态与响应体大小），失效后直接替换条目即可，格式保持不变。
+`vod.json` / `live.json` 里的地址来自公开社区，随时可能失效。`remark` 记录的是录入时的实测状态（HTTP 状态与响应体大小）。
+
+仓库带一个 GitHub Action（`.github/workflows/check-resources.yml`），每天北京时间 **04:00** 自动巡检：
+
+- 一条地址连续 3 次（间隔 5 秒）拿不到有效内容 → 从清单剔除，连原因一起搬进 `removed.json` 留档。
+- 有效 = HTTP 2xx、响应体 ≥ 200B、内容不以 `<` 开头（HTML 页面一律判失效，app 的解析器不接受 HTML）。`.json` 地址还要求以 `{` 或 `[` 开头；TVBox 配置里的 `//`、`/* */` 注释**不**算失效。
+- `removed.json` 里的条目每天复检，恢复可用且主清单里没有时自动搬回原清单。
+- 某个清单里所有条目同时失败 → 跳过该清单不做剔除（视为巡检机自身网络问题）。
+- 巡检机在境外，部分国内源会屏蔽海外 IP 而被误档；这类条目每天复检，长期被档多半只是 IP 问题，可从 `removed.json` 删掉后手工加回主清单。
+- 想立刻巡检：Actions 页面 → `check-resources` → Run workflow；本地也可以 `node scripts/check-resources.mjs --dry-run` 只看结论不写文件。
+
+手工增删条目随时可行，`git push` 后下一次巡检以仓库当前内容为准。
