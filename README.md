@@ -9,7 +9,7 @@ https://raw.githubusercontent.com/Bobjoy/webhtv-sub/main/vod.json
 https://raw.githubusercontent.com/Bobjoy/webhtv-sub/main/live.json
 ```
 
-在 app 的「设置 → 订阅」里新增订阅时粘贴上面的地址，分组分别选「点播」和「直播」。
+app 的订阅入口默认隐藏：在「设置」页标题栏 2 秒内连点 5 次，输入下面的[授权码](#授权码codestxt)开启，再进「设置 → 订阅」新增订阅，粘贴上面的地址，分组分别选「点播」和「直播」。
 
 国内网络直连 `raw.githubusercontent.com` 通常不通。app 的订阅拉取会复用「设置 → 更新」里的 **GitHub 代理** 开关，选一个可用代理（例如 `ghfast.top`）后这两个地址即可拉通。
 
@@ -30,6 +30,28 @@ https://raw.githubusercontent.com/Bobjoy/webhtv-sub/main/live.json
    ```
 
 3. 带注释的 JSON —— 允许 `//` 与 `/* */` 注释（社区多仓清单常见形态）。
+
+## 清单内容与收录规则
+
+`vod.json` 16 条点播配置，`live.json` 22 条直播源。条目主要来自社区清单 [`youhunwl/TVAPP`](https://github.com/youhunwl/TVAPP/blob/main/README.md) 的「接口源」「直播源」两节，录入时逐条实测，`remark` 记下实测状态。
+
+收录判据（不满足的一律不录，以后补录也按同一套走）：
+
+- **点播配置**必须剥掉 `//`、`/* */` 注释后能以 `{` 或 `[` 起头，且含 `sites` / `spider` / `lives` / `parses` 之类的实体字段。社区清单里以 `.png`、图片名、二维码页伪装的真配置照样收（例如「哈基米」）。
+- **只有顶层 `urls` 的多仓/单仓不收**（小盒子多仓、游魂多仓、拾光多仓、潇洒单仓等共 7 条）。多仓的每一项还得再解一次，app 的订阅条目要的是能直接启用的线路地址，中间多一层只会让用户点进去看到一堆点不开的仓库。
+- **直播源**必须是 `#EXTM3U`/`#EXTINF` 或 TVBox `#genre#` 形态，且含地址的频道行 ≥ 10 条。社区不少"直播源"到期后退化成只剩一条"更新时间"广告视频（游魂直播源、zbds IPv6、咪咕 IPTV、epg.pw 新加坡），收进去只会让订阅列表出现点开没台可看的条目。
+- HTML 页面、图片/二维码伪装、直连 25 秒超时都判为不收（`iptv-org.github.io/iptv/index.m3u` 全量清单本机超时，只收同源的台湾分表；`web.utako.moe`、`gongdian.top`、`live.fanmingming.cn` 一类 DNS/连接直接失败的也略过）。`live.freetv.top` 的虎牙清单录入时持续 504，同源的斗鱼正常，想补的话单独验一次。
+- GitHub raw 地址在国内直连通常不通，靠 app 里复用「设置 → 更新」的 **GitHub 代理** 开关；巡检机在境外不受此限制。
+
+## 授权码（codes.txt）
+
+`codes.txt` 是 app 内部门禁用的授权码表，一行一个 4 位数字，`#` 开头为注释，app 每次解锁时实时拉取、任一命中即通过：
+
+```text
+https://raw.githubusercontent.com/Bobjoy/webhtv-sub/main/codes.txt
+```
+
+它**不是**凭据：文件明文公开，校验发生在客户端，4 位数字只有 10000 种组合。作用只是让不知道手势和码的人不会误入订阅配置，给分发对象一个开关。因此码可以重复分发给人、可以随时增删行，但无法撤回、无法计数、无法区分谁在用。不要把其他敏感内容写进这个仓库。
 
 ## 维护
 

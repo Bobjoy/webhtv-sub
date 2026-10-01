@@ -7,9 +7,109 @@
       "remark": "2026-10-01 实测 200 / 59KB"
     },
     {
-      "name": "xhztv DC",
-      "url": "http://xhztv.top/DC.txt",
-      "remark": "2026-10-01 实测 200 / 1.9KB"
+      "name": "IPTV 默认源",
+      "url": "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u",
+      "remark": "2026-10-01 实测 200 / 387KB"
+    },
+    {
+      "name": "IPTV IPv4",
+      "url": "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.m3u",
+      "remark": "2026-10-01 实测 200 / 104KB"
+    },
+    {
+      "name": "IPTV IPv6",
+      "url": "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv6/result.m3u",
+      "remark": "2026-10-01 实测 200 / 323KB"
+    },
+    {
+      "name": "myIPTV IPv4",
+      "url": "https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u",
+      "remark": "2026-10-01 实测 200 / 262KB"
+    },
+    {
+      "name": "myIPTV IPv6",
+      "url": "https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv6.m3u",
+      "remark": "2026-10-01 实测 200 / 196KB"
+    },
+    {
+      "name": "zbds IPTV4 M3U",
+      "url": "https://live.zbds.top/tv/iptv4.m3u",
+      "remark": "2026-10-01 实测 200 / 120KB"
+    },
+    {
+      "name": "BurningC4",
+      "url": "https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u",
+      "remark": "2026-10-01 实测 200 / 7.8KB"
+    },
+    {
+      "name": "茶客源",
+      "url": "https://raw.githubusercontent.com/vamoschuck/TV/main/M3U",
+      "remark": "2026-10-01 实测 200 / 144KB"
+    },
+    {
+      "name": "范明明直播源",
+      "url": "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
+      "remark": "2026-10-01 实测 200 / 25KB"
+    },
+    {
+      "name": "YueChan 直播源",
+      "url": "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",
+      "remark": "2026-10-01 实测 200 / 33KB"
+    },
+    {
+      "name": "Kimentanm源，有部分IPv6",
+      "url": "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+      "remark": "2026-10-01 实测 200 / 21KB"
+    },
+    {
+      "name": "BigBigGrandG源，有部分IPv6",
+      "url": "https://raw.githubusercontent.com/BigBigGrandG/IPTV-URL/release/Gather.m3u",
+      "remark": "2026-10-01 实测 200 / 322KB"
+    },
+    {
+      "name": "YanG集合源，有部分IPv6",
+      "url": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+      "remark": "2026-10-01 实测 200 / 26KB"
+    },
+    {
+      "name": "中国大陆频道",
+      "url": "https://epg.pw/test_channels.m3u",
+      "remark": "2026-10-01 实测 200 / 462KB"
+    },
+    {
+      "name": "中国香港频道",
+      "url": "https://epg.pw/test_channels_hong_kong.m3u",
+      "remark": "2026-10-01 实测 200 / 10.0KB"
+    },
+    {
+      "name": "中国澳门频道",
+      "url": "https://epg.pw/test_channels_macau.m3u",
+      "remark": "2026-10-01 实测 200 / 6.0KB"
+    },
+    {
+      "name": "中国台湾频道",
+      "url": "https://epg.pw/test_channels_taiwan.m3u",
+      "remark": "2026-10-01 实测 200 / 15KB"
+    },
+    {
+      "name": "中国台湾频道（iptv-org）",
+      "url": "https://iptv-org.github.io/iptv/countries/tw.m3u",
+      "remark": "2026-10-01 实测 200 / 4.6KB"
+    },
+    {
+      "name": "马来西亚频道",
+      "url": "https://epg.pw/test_channels_malaysia.m3u",
+      "remark": "2026-10-01 实测 200 / 4.4KB"
+    },
+    {
+      "name": "世界各地免费电视频道",
+      "url": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8",
+      "remark": "2026-10-01 实测 200 / 539KB"
+    },
+    {
+      "name": "斗鱼一起看",
+      "url": "https://live.freetv.top/douyuyqk.m3u",
+      "remark": "2026-10-01 实测 200 / 174KB"
     }
   ]
 }

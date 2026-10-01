@@ -35,6 +35,51 @@
       "name": "yingm",
       "url": "https://www.yingm.cc/dm/dm.json",
       "remark": "2026-10-01 实测 200 / 8.7KB"
+    },
+    {
+      "name": "肥猫接口",
+      "url": "http://肥猫.net",
+      "remark": "2026-10-01 实测 200 / 17KB"
+    },
+    {
+      "name": "哈基米",
+      "url": "https://17264.kstore.space/哈基米.png",
+      "remark": "2026-10-01 实测 200 / 65KB"
+    },
+    {
+      "name": "俊佬接口",
+      "url": "http://home.jundie.top:81/top98.json",
+      "remark": "2026-10-01 实测 200 / 16KB"
+    },
+    {
+      "name": "香雅情",
+      "url": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json",
+      "remark": "2026-10-01 实测 200 / 24KB"
+    },
+    {
+      "name": "宝盒VIP",
+      "url": "https://raw.githubusercontent.com/guot55/YGBH/main/vip2.json",
+      "remark": "2026-10-01 实测 200 / 44KB"
+    },
+    {
+      "name": "高天流云",
+      "url": "https://raw.githubusercontent.com/gaotianliuyun/gao/master/js.json",
+      "remark": "2026-10-01 实测 200 / 50KB"
+    },
+    {
+      "name": "分享",
+      "url": "https://raw.githubusercontent.com/maoystv/6/main/000.json",
+      "remark": "2026-10-01 实测 200 / 76KB"
+    },
+    {
+      "name": "东篱线路",
+      "url": "https://raw.githubusercontent.com/chitue/dongliTV/main/api.json",
+      "remark": "2026-10-01 实测 200 / 54KB"
+    },
+    {
+      "name": "苹果CMS资源站",
+      "url": "https://pastebin.com/raw/gtbKvnE1",
+      "remark": "2026-10-01 实测 200 / 14KB"
     }
   ]
 }
