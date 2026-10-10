@@ -105,6 +105,11 @@
       "name": "世界各地免费电视频道",
       "url": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8",
       "remark": "2026-10-01 实测 200 / 539KB"
+    },
+    {
+      "name": "斗鱼一起看",
+      "url": "https://live.freetv.top/douyuyqk.m3u",
+      "remark": "2026-10-01 实测 200 / 174KB"
     }
   ]
 }
