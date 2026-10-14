@@ -1,6 +1,14 @@
 {
   "items": [
     {
+      "name": "斗鱼一起看",
+      "url": "https://live.freetv.top/douyuyqk.m3u",
+      "remark": "2026-10-01 实测 200 / 174KB",
+      "source": "live",
+      "removedAt": "2026-10-14",
+      "reason": "超时 20s"
+    },
+    {
       "name": "iyouhun DC",
       "url": "https://www.iyouhun.com/tv/dc",
       "remark": "2026-10-01 实测 200 / 18KB",
