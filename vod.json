@@ -22,11 +22,6 @@
       "remark": "2026-10-01 实测 200 / 18KB"
     },
     {
-      "name": "FongMi 252035",
-      "url": "https://www.252035.xyz/z/FongMi.json",
-      "remark": "2026-10-01 实测 200 / 18KB"
-    },
-    {
       "name": "hgyx",
       "url": "https://api.hgyx.vip/hgyx.json",
       "remark": "2026-10-01 实测 200 / 9.8KB"
@@ -75,11 +70,6 @@
       "name": "苹果CMS资源站",
       "url": "https://pastebin.com/raw/gtbKvnE1",
       "remark": "2026-10-01 实测 200 / 14KB"
-    },
-    {
-      "name": "肥猫接口",
-      "url": "http://肥猫.net",
-      "remark": "2026-10-01 实测 200 / 17KB"
     }
   ]
 }
