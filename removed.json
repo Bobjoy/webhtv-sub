@@ -9,14 +9,6 @@
       "reason": "超时 20s"
     },
     {
-      "name": "hgyx",
-      "url": "https://api.hgyx.vip/hgyx.json",
-      "remark": "2026-10-01 实测 200 / 9.8KB",
-      "source": "vod",
-      "removedAt": "2026-11-05",
-      "reason": "ENOTFOUND"
-    },
-    {
       "name": "肥猫接口",
       "url": "http://肥猫.net",
       "remark": "2026-10-01 实测 200 / 17KB",
