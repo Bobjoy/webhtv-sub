@@ -1,14 +1,6 @@
 {
   "items": [
     {
-      "name": "hgyx",
-      "url": "https://api.hgyx.vip/hgyx.json",
-      "remark": "2026-10-01 实测 200 / 9.8KB",
-      "source": "vod",
-      "removedAt": "2026-11-10",
-      "reason": "UND_ERR_CONNECT_TIMEOUT"
-    },
-    {
       "name": "斗鱼一起看",
       "url": "https://live.freetv.top/douyuyqk.m3u",
       "remark": "2026-10-01 实测 200 / 174KB",
