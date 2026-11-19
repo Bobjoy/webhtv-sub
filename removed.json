@@ -1,6 +1,14 @@
 {
   "items": [
     {
+      "name": "斗鱼一起看",
+      "url": "https://live.freetv.top/douyuyqk.m3u",
+      "remark": "2026-10-01 实测 200 / 174KB",
+      "source": "live",
+      "removedAt": "2026-11-19",
+      "reason": "超时 20s"
+    },
+    {
       "name": "kstore 9280",
       "url": "https://9280.kstore.vip/newwex.json",
       "remark": "2026-10-01 实测 200 / 33KB",

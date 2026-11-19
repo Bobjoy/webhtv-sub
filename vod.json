@@ -65,6 +65,16 @@
       "name": "hgyx",
       "url": "https://api.hgyx.vip/hgyx.json",
       "remark": "2026-10-01 实测 200 / 9.8KB"
+    },
+    {
+      "name": "kstore 9280",
+      "url": "https://9280.kstore.vip/newwex.json",
+      "remark": "2026-10-01 实测 200 / 33KB"
+    },
+    {
+      "name": "哈基米",
+      "url": "https://17264.kstore.space/哈基米.png",
+      "remark": "2026-10-01 实测 200 / 65KB"
     }
   ]
 }
